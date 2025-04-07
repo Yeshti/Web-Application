@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flatland Business Advisor – Week 4</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/flatland-advisor.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfaf5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #d2bba0;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #a1866f;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #a1866f;
+    }
+
+    label, select, button {
+      display: block;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    select, button {
+      padding: 0.6rem;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #a1866f;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1.5rem;
+    }
+
+    button:hover {
+      background-color: #8c715d;
+    }
+
+    .advice-box {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #f3ebe5;
+      border-left: 4px solid #a1866f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ececec;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Flatland Business Advisor</h1>
+    <p>Week 4 – DOM Manipulation Project</p>
+  </header>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="landing-page.html">Landing Page</a>
+    <a href="rps-game.html">RPS Game</a>
+    <a href="rss-reader.html">RSS Reader</a>
+  </nav>
+
+  <main>
+    <h2>Select your business type</h2>
+    <label for="industry">Choose an industry:</label>
+    <select id="industry">
+      <option value="retail">Retail</option>
+      <option value="technology">Technology</option>
+      <option value="hospitality">Hospitality</option>
+      <option value="finance">Finance</option>
+    </select>
+
+    <button id="getAdvice">Get Business Advice</button>
+
+    <div id="advice" class="advice-box" style="display: none;"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Yeshti Bissoondoyal. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock, Paper, Scissors – Yeshti</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/rps-game.js"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fefaf6, #fbeade);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .rps-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .rps-container h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #a1866f;
+    }
+
+    .game-controls {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .rps-btn {
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem;
+      border: none;
+      background-color: #d2b48c;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .rps-btn:hover {
+      background-color: #a1866f;
+      transform: scale(1.05);
+    }
+
+    .scoreboard {
+      background-color: #fffaf2;
+      border: 1px solid #e0d6c2;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .scoreboard h2 {
+      color: #cfa27d;
+    }
+
+    .scoreboard p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    .scoreboard span {
+      font-weight: bold;
+      color: #a1866f;
+      font-size: 1.3rem;
+    }
+
+    .result {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: #5a5047;
+    }
+
+    #reset-btn {
+      background-color: #a1866f;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #reset-btn:hover {
+      background-color: #8d715f;
+    }
+
+    @media (max-width: 600px) {
+      .game-controls {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .rps-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+          <a href="../index.html" class="logo">← Back to Portfolio</a>
+          <ul class="nav-links">
+            <li><a href="landing-page.html">Landing Page</a></li>
+            <li><a href="feature-page.html">Feature Page</a></li>
+            <li><a href="rss-reader.html">RSS Reader</a></li>
+          </ul>
+        </nav>
+      </header>      
+
+  <main class="rps-container">
+    <h1>Rock, Paper, Scissors</h1>
+    <p class="result" id="result-message">Make your move!</p>
+
+    <div class="game-controls">
+      <button class="rps-btn" data-choice="rock">🪨 Rock</button>
+      <button class="rps-btn" data-choice="paper">📄 Paper</button>
+      <button class="rps-btn" data-choice="scissors">✂️ Scissors</button>
+    </div>
+
+    <section class="scoreboard">
+      <h2>Scoreboard</h2>
+      <p>Wins: <span id="wins">0</span></p>
+      <p>Losses: <span id="losses">0</span></p>
+      <p>Ties: <span id="ties">0</span></p>
+    </section>
+
+    <button id="reset-btn">🔄 Reset Game</button>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding: 1rem;">&copy; 2025 Yeshti Bissoondoyal. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Feed RSS Reader</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/rss-reader.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="../index.html" class="logo">← Back to Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="landing-page.html">Landing Page</a></li>
+        <li><a href="rps-game.html">RPS Game</a></li>
+        <li><a href="feature-page.html">Feature Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="rss-header">
+      <h1>Multi-Feed RSS Reader</h1>
+      <p>Select a feed source to view the latest articles.</p>
+
+      <label for="feed-selector">Choose a feed:</label>
+      <select id="feed-selector" aria-label="RSS Feed Selector">
+        <option value="https://hacks.mozilla.org/rss">Mozilla Hacks</option>
+        <option value="http://feeds.bbci.co.uk/news/world/rss.xml">BBC World News</option>
+      </select>
+    </section>
+
+    <section id="content" class="rss-content" aria-live="polite">
+      <p>Loading feed…</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Multi-Feed RSS Reader. All rights reserved.</p>
+  </footer>
+</body>
+</html>
